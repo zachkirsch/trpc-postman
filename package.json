@@ -1,0 +1,47 @@
+{
+  "name": "trpc-postman",
+  "version": "1.0.0",
+  "description": "Generate an Postman Collection from your tRPC server, in one line of code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zachkirsch/trpc-postman"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "!lib/**/__test__",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "lint:eslint": "eslint --fix src",
+    "lint:prettier": "prettier --write src"
+  },
+  "keywords": [
+    "trpc",
+    "postman"
+  ],
+  "author": "Zach Kirsch",
+  "license": "MIT",
+  "dependencies": {
+    "json-schema-faker": "^0.5.8",
+    "lodash-es": "^4.17.21",
+    "zod-to-json-schema": "^3.24.1"
+  },
+  "peerDependencies": {
+    "@trpc/server": "^11.0.0-rc.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/lodash-es": "^4.17.12",
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
+  }
+}
